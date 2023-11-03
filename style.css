@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    overflow: hidden ;
+}
+
+#longpage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    /* background-color: black; */
+}
+
+#navbar{
+    position: absolute;
+    padding: 40px 180px;
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    gap: 90px;
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    animation-name: downwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes downwards {
+    0%{
+        top: -50%;
+        opacity: 0;
+    }
+    100%{
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+#navbar a{
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+#navbar #active{
+    border: 3px solid red;
+    padding: 20px 30px;
+    margin-top: -15px;
+    padding-bottom: 35px;
+    font-weight: 800;
+    font-size: 25px;
+    color: red;
+    text-align: center;
+}
+
+#navbar a:nth-child(1){
+    color: red;
+}
+
+#navbar #lines{
+    position: absolute;
+    left: 36.9%;
+    top: 84%;
+    font-size: 30px;
+    color: red;
+    
+}
+
+#longpage>h1{
+    font-family: "Hunger Games";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-size: 350px;
+    letter-spacing: 10px;
+    font-weight: 800;
+    color: rgb(175, 0, 0);
+    animation-name: move;
+    animation-duration: 5s;
+}
+
+#longpage img{
+    position: absolute;
+    left: 49%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 17%;
+    width: 26%;
+    animation-name: move;
+    animation-duration: 5s;
+}
+
+
+
+#longpage #two{
+    position: absolute;
+    left: -6%;
+    top: 40%;
+}
+
+#longpage #three{
+    position: absolute;
+    left: 104%;
+    top: 40%;
+}
+
+#para{
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    height: 40vh;
+    animation-name: move;
+    animation-duration: 5s;
+    /* background-color: black; */
+}
+
+#para h2{
+    text-transform: uppercase;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 800;
+    color: red;
+}
+
+#para p{
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%,0%);
+    text-align: center;
+    width: 40%;
+    font-weight: 500;
+}
+
+#vacant{
+    width: 100%;
+    height: 10vh;
+    /* background-color: black; */
+}
+
+#slanted{
+    position: relative;
+    width: 100%;
+    height: 250vh;
+    /* background-color: red; */
+}
+
+#slanted img{
+    z-index: 99999;
+    position: absolute;
+    opacity: 0.5;
+    right: 3%;
+}
+
+#slanter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(195, 0, 0);
+    clip-path: polygon(0 35%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+#rotated{
+    z-index: 99999;
+    position: absolute;
+    top: 19%;
+    left: -15%;
+    transform: rotate(-90deg);
+}
+
+#rotated h1{
+    font-family: "fairplay display";
+    color: black;
+    font-size: 150px;
+    line-height: 1;
+}
+
+#rotated span{
+    color: #fff;
+    font-family: "fairplay display";
+}
+
+#slanter #text{
+    position: absolute;
+    text-align: center;
+    top: 28%;
+    right: 15%;
+    width: 30%;
+}
+
+#text h1{
+    font-size: 40px;
+    color: white;
+}
+
+#text p{
+    font-weight: 500;
+    margin-top: 30px;
+    color: white;
+    line-height: 1.7;
+}
+
+#text button{
+    padding: 10px 20px;
+    margin-top: 30px;
+    background-color: white;
+    color: red;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    font-weight: 800;
+    text-transform: uppercase;
+    /* border-color: black; */
+    scale: 1;
+    transition: 1s;
+    border-color: transparent;
+}
+
+#text button:hover{
+    background-color: black;
+    /* border-color: white; */
+    scale: 1.1;
+}
+
+#small{
+    display: flex;
+    position: absolute;
+    height: 80px;
+    width: 300px;
+    right: 7%;
+    top: 12%;
+}
+
+#small #left{
+    width: 30%;
+    height: 100%;
+    border-right: 2px solid white;
+}
+
+#left h1{
+    position: absolute;
+    top: 25%;
+    color: white;
+    transform: rotate(90deg);
+}
+
+#small #right{
+    width: 70%;
+    height: 100%;
+}
+
+#right h3{
+    padding-left: 20px;
+    color: white;
+}
+
+#right p{
+    padding-left: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: 290;
+}
+
+#image{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 75vh;
+    background-color: #fff;
+}
+
+#image #img1{
+    position: absolute;
+    opacity: 0.9;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: red;
+}
+
+#footer img{
+    position: absolute;
+    right: 0;
+    opacity: .6;
+    mix-blend-mode: darken;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#footer h1{
+    font-family: "playfair display";
+    text-transform: uppercase;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 300px;
+    font: 800;
+    position: absolute;
+    letter-spacing: 30px;
+    color: white;
+}
+
+#footer h3{
+    font-family: "playfair display";
+    text-transform: uppercase;
+    left: 49%;
+    top: 28%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font: 500;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    position: absolute;
+    color: white;
+}
+
+@keyframes move {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1.0;
+    }
+}
